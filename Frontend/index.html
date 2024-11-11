@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheet.css">
+
+
+</head>
+<body>
+  <main>
+
+<h1><b>DB Project with Users Table</b></h1>
+
+<h2>ADD NEW USER:</h2>
+<div class="form-section">
+<div class="input-group">
+    <label for="username-input">Username:</label>
+    <input type="text" id="username-input">
+</div>
+
+<div class="input-group">
+    <label for="password-input">Password:</label>
+    <input type="password" id="password-input">
+</div>
+
+<div class="input-group">
+    <label for="firstname-input">First Name:</label>
+    <input type="text" id="firstname-input">
+</div>
+
+<div class="input-group">
+    <label for="lastname-input">Last Name:</label>
+    <input type="text" id="lastname-input">
+</div>
+
+<div class="input-group">
+    <label for="salary-input">Salary:</label>
+    <input type="number" id="salary-input">
+</div>
+
+<div class="input-group">
+    <label for="age-input">Age:</label>
+    <input type="number" id="age-input">
+</div>
+
+<div class="input-group">
+    <label for="registerday-input">Register Day:</label>
+    <input type="date" id="registerday-input">
+</div>
+
+<div class="input-group">
+    <label for="signintime-input">Sign-in Time:</label>
+    <input type="datetime-local" id="signintime-input">
+</div>
+
+<button id="add-user-btn">Add User</button>
+</div>
+
+<h2>SEARCH ENGINE</h2>
+<div class="form-section">
+<div class="input-group">
+    <label for="search-input"><b>Insert Username:</b></label>
+    <input placeholder="Search by Username" id="search-input">
+    <button id="search-btn">Search</button>
+</div>
+
+<div class="input-group">
+    <label><b>Insert First & Last Name:</b></label>
+    <div>
+        <input placeholder="Search by First Name" id="search-firstname-input">
+        <input placeholder="Search by Last Name" id="search-lastname-input">
+    </div>
+    <button id="search-name-btn">Search by Name</button>
+</div>
+
+<div class="input-group">
+    <label><b>Insert Min Salary & Max Salary:</b></label>
+    <div>
+        <input type="number" id="min-salary-input" placeholder="Min Salary">
+        <input type="number" id="max-salary-input" placeholder="Max Salary">
+    </div>
+    <button id="search-salary-btn">Search by Salary</button>
+</div>
+
+<div class="input-group">
+    <label><b>Insert Min Age & Max Age:</b></label>
+    <div>
+        <input type="number" id="min-age-input" placeholder="Min Age">
+        <input type="number" id="max-age-input" placeholder="Max Age">
+    </div>
+    <button id="search-age-btn">Search by Age</button>
+</div>
+
+<div class="input-group">
+    <label><b>Search by Specific User ID:</b></label>
+    <div>
+        <input placeholder="Search registered after (Username)" id="search-after-input">
+        <button id="search-after-btn">Search After User</button>
+    </div>
+    <div>
+        <input placeholder="Search same day as (Username)" id="search-same-day-input">
+        <button id="search-same-day-btn">Search Same Day Users</button>
+    </div>
+</div>
+
+<div class="input-group">
+    <label><b>Special Searches:</b></label>
+    <button id="search-never-signed-in-btn">Search Never Signed In Users</button>
+    <button id="search-today-btn">Search Users Registered Today</button>
+</div>
+</div>
+
+<h2><center>DATABASE TABLE</center></h2>
+
+<center> 
+
+    <table id="table">
+      <thead>
+        <th>Username</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Salary</th>
+        <th>Age</th>
+        <th>Register Day</th>
+        <th>Sign-in Time</th>
+
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <section hidden id="update-row">
+      <label>Username:</label>
+      <input type="text" id="update-username-input" disabled>
+      <label>First Name:</label>
+      <input type="text" id="update-firstname-input">
+      <label>Last Name:</label>
+      <input type="text" id="update-lastname-input">
+      <label>Salary:</label>
+      <input type="number" id="update-salary-input">
+      <label>Age:</label>
+      <input type="number" id="update-age-input">
+
+    </section>
+  </center>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
